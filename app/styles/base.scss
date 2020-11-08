@@ -1,0 +1,163 @@
+@import "_variables";
+
+//base styles
+
+body {
+  background: $color-bg;
+  font-family: $font-montserrat;
+  font-size: $font-size-normal;
+  color: $color-black;
+}
+
+h1 {
+  font-family: $font-montserrat;
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-xlarge;
+  color: $color-primary;
+  line-height: 41px;
+}
+
+h2 {
+  font-family: $font-montserrat;
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-large;
+  color: $color-black;
+  line-height: 22px;
+  text-align: center;
+}
+
+h3 {
+  font-family: $font-montserrat;
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-smlarge;
+  color: $color-primary;
+  line-height: 30px;
+
+}
+
+h4 {
+  font-family: $font-montserrat;
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-xnormal;
+  color: $color-black;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+}
+
+h5{
+  font-family: $font-montserrat;
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-smlarge;
+  color: $color-black;
+  line-height: 29px;
+
+}
+
+h6{
+  font-family: $font-montserrat;
+font-weight: $font-weight-semibold;
+font-size: $font-size-xlnormal;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: $color-primary;
+
+}
+
+
+p{
+  line-height: 22px;
+}
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+
+button, .btn{
+  &:focus{
+    outline: none;
+     border: none;
+
+  }
+}
+
+.btn-primary{
+  color: $color-primary;
+  font-size: $font-size-normal;
+  font-family: $font-montserrat;
+  font-weight: $font-weight-semibold;
+  background: transparent;
+  box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 30px rgba(1, 142, 190, 0.4);
+  border-radius: 16px;
+  border: none;
+  padding: 19px 24px 17px 26px;
+  width: inherit;
+  &:focus, &:hover, &:disabled{
+    background: transparent;
+    color: $color-primary;
+    border: none;
+    box-shadow: -15px -15px 30px #FFFFFF, 15px 15px 30px rgba(1, 142, 190, 0.4);
+  }
+
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active
+  {
+    background: transparent;
+    border: none;
+    color: $color-primary;
+    outline: none;
+  }
+  &:not(:disabled):not(.disabled).active:focus, 
+  &:not(:disabled):not(.disabled):active:focus 
+  {
+    background: linear-gradient(317.7deg, rgba(255, 255, 255, 0.4) 105.18%), #F0F5FF;
+    background-blend-mode: soft-light, normal;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    box-shadow: inset -5px -5px 10px #FAFBFF, inset 5px 5px 10px rgba(1, 142, 190, 0.4);
+  }
+}
+a.btn-primary{
+  display: block;
+  text-align: center;
+}
+
+
+
+.inner-padding{
+  padding: 0 25px;
+}
+
+
+
+
+
+
+@media (min-width: 576px) {
+
+  
+}
+
+@media (min-width: 768px) {
+
+  h3{
+    font-size: 27px;
+    line-height: 37px;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  h1{
+    font-size: $font-size-huge;
+  }  
+
+    h2{
+    font-size: $font-size-xxlarge;
+  }  
+  h4{
+    font-size: $font-size-xlnormal
+  }
+}

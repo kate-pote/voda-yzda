@@ -235,6 +235,10 @@
     }
   }
 
+  .mob-hidden{
+    display: none;
+  }
+
   .map-holder{
   padding: 0;
   padding-bottom: 33px;
@@ -282,7 +286,7 @@ footer{
 @media (min-width: 992px) {
 
   .container-fluid{
-    background: url(../images/bg/desktop-bg.png) no-repeat right top;
+    background: url(../images/bg/desktop-bg.png) no-repeat right 210px;
     background-size: 50%;
   }
   .navbar {
@@ -353,24 +357,77 @@ footer{
         width: 246px;
       }
   }
+
+
+    .block-a{
+      margin-bottom: 100px;
+      align-items: stretch;
+    }
     .block-a h2{
       padding-bottom: 70px;
     }
 
   .img-holder{
     height: 350px;
+    margin-bottom: 32px;
     img{
       height: inherit;
-      margin: 0;
     }
   }
 
-  .good-section .flx-holder{
-    // min-height: 190px;
+  .price-block{
+    min-height: 65px;
   }
+  .price-block span{
+    display: flex;
+    padding-bottom: 7px;
+    align-items: center;
+  }
+
+  .good-section .price{
+    font-size: $font-size-normal;
+    strong{
+      $font-size-smlarge;
+    }
+  }
+
+  .flx-holder h4{
+    min-height: 120px;
+  }
+
+  .goods-descr{
+    min-height: 70px;
+  }
+
+
+  .block-b h2{
+    margin-bottom: 100px;
+  }
+
+    .block-b .row{
+      justify-content: space-evenly;
+    }
+
+  .edv-holder{
+    justify-content: space-evenly;
+  }
+
+
 
   .block-c{
     justify-content: space-evenly;
+    align-items:center;
+    h2{
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    p{margin-bottom: 60px;
+      line-height: 38px;
+
+    }
+    .btn-primary{
+      max-width: 246px;
+    }
   }
   .side-logo{
     display: block;
@@ -380,31 +437,57 @@ footer{
     }
   }
 
+  
+
   .block-d{
     position: relative;
     padding-bottom: 0;
-    h5{
-    display: none;
-    // засунусть в контакты еще один head
-    }
+    
     .contacts-holder{
+      text-align: left;
+      padding: 60px 50px 0 78px;
       position: absolute;
       background-color: $color-white;
       box-shadow: 10px 10px 20px rgba(1, 142, 190, 0.4), -10px -10px 20px #FAFBFF;
       border-radius: 10px;
       width: 485px;
       height: 463px;
-
-     right: 120px ;
+      right: 120px ;
       top: calc(50% - 231px);
+      p{
+        font-size: $font-size-xlnormal;
+        line-height: 22px;
+      }
+    }
+
+    h6{
+      font-size: $font-size-smlarge;
+    }
+    .phone{
+      font-size: $font-size-mlarge;
+      font-weight: $font-weight-semibold;
+      margin-bottom: 56px;
     }
   }
+
+  h5{
+    display: none;
+      &.mob-hidden{
+      display: block;
+      font-size: $font-size-xlarge;
+      text-align: left;
+      margin-bottom: 40px;
+
+      }
+    }
 
   .map-holder{
     iframe{
       height: 636px;
     }
+    padding-bottom: 0;
   }
+
 
 
 

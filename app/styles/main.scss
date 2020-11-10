@@ -6,6 +6,7 @@
 /*---------------------------------
     header
   ---------------------------------*/
+  
 /*hamburger menu*/
 .navbar-toggler{
   padding: 0;
@@ -251,8 +252,9 @@ footer{
 }
 
 
-
-/*Media Queries*/
+/*---------------------------------
+    Media Queries
+  ---------------------------------*/
 
 @media (min-width: 576px) {
 
@@ -279,6 +281,26 @@ footer{
     .btn{
       max-width: 246px;
     }
+  }
+
+  .img-holder{
+    height: 350px;
+    margin-bottom: 32px;
+    img{
+      height: inherit;
+    }
+  }
+
+  .flx-holder h4{
+    min-height: 120px;
+  }
+
+  .goods-descr{
+    min-height: 70px;
+  }
+
+  .price-block{
+    min-height: 100px;
   }
   
 }
@@ -367,14 +389,6 @@ footer{
       padding-bottom: 70px;
     }
 
-  .img-holder{
-    height: 350px;
-    margin-bottom: 32px;
-    img{
-      height: inherit;
-    }
-  }
-
   .price-block{
     min-height: 65px;
   }
@@ -387,16 +401,8 @@ footer{
   .good-section .price{
     font-size: $font-size-normal;
     strong{
-      $font-size-smlarge;
+      font-size: $font-size-smlarge;
     }
-  }
-
-  .flx-holder h4{
-    min-height: 120px;
-  }
-
-  .goods-descr{
-    min-height: 70px;
   }
 
 
@@ -489,8 +495,9 @@ footer{
   }
 
 
-
-
+  footer{
+    margin-top: -7px;
+  }
 
 }
 
@@ -502,6 +509,12 @@ footer{
   }
 
 
+.header h1 {
+    width: 40%;
+  }
+  .header p {
+    width: 30%;
+  }
 
 }
 

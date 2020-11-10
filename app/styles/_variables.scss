@@ -35,22 +35,3 @@ $color-semi-black: rgba(27, 27, 27, 0.7);
 $color-white: #FFFFFF;
 
 $color-primary: #018EBE;
-
-
-
-/**/
-// $border-r: 30px;
-
-/*---------------------------------
-    Mixins
-  ---------------------------------*/
-@mixin placeholder {
-  ::-webkit-input-placeholder {@content}
-  :-moz-placeholder           {@content}
-  ::-moz-placeholder          {@content}
-  :-ms-input-placeholder      {@content}
-}
-
-
-
-

@@ -118,6 +118,10 @@ button, .btn{
     box-shadow: inset -5px -5px 10px #FAFBFF, inset 5px 5px 10px rgba(1, 142, 190, 0.4);
   }
 }
+
+.btn:not(:disabled):not(.disabled){
+  border: 1px solid transparent;
+}
 a.btn-primary{
   display: block;
   text-align: center;

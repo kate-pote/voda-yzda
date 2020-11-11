@@ -175,6 +175,9 @@
   .block-b{
     justify-content:center;
     padding: 28px 25px 28px 25px;
+    .row{
+      width: 100%;
+    }
     h2{
       margin-bottom: 59px;
     }
